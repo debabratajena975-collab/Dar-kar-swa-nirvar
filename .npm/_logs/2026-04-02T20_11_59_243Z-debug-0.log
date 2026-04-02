@@ -1,0 +1,99 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.12.0
+2 info using node@v25.8.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install mongodb
+7 verbose argv "install" "mongodb"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-04-02T20_11_59_243Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-04-02T20_11_59_243Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:1060110336 maxSize:265027584 maxEntrySize:132513792
+12 silly idealTree buildDeps
+13 silly fetch manifest mongodb@^7.1.1
+14 silly packumentCache full:https://registry.npmjs.org/mongodb cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/npm 5782ms
+16 http fetch GET 200 https://registry.npmjs.org/mongodb 7511ms (cache updated)
+17 silly packumentCache full:https://registry.npmjs.org/mongodb set size:undefined disposed:false
+18 silly fetch manifest @aws-sdk/credential-providers@^3.806.0
+19 silly packumentCache full:https://registry.npmjs.org/@aws-sdk%2fcredential-providers cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-providers 6522ms (cache updated)
+21 silly packumentCache full:https://registry.npmjs.org/@aws-sdk%2fcredential-providers set size:undefined disposed:false
+22 silly fetch manifest @mongodb-js/zstd@^7.0.0
+23 silly packumentCache full:https://registry.npmjs.org/@mongodb-js%2fzstd cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/@mongodb-js%2fzstd 2630ms (cache revalidated)
+25 silly packumentCache full:https://registry.npmjs.org/@mongodb-js%2fzstd set size:99219 disposed:false
+26 silly fetch manifest gcp-metadata@^7.0.1
+27 silly packumentCache full:https://registry.npmjs.org/gcp-metadata cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/gcp-metadata 1079ms (cache revalidated)
+29 silly packumentCache full:https://registry.npmjs.org/gcp-metadata set size:191448 disposed:false
+30 silly fetch manifest kerberos@^7.0.0
+31 silly packumentCache full:https://registry.npmjs.org/kerberos cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/kerberos 478ms (cache revalidated)
+33 silly packumentCache full:https://registry.npmjs.org/kerberos set size:117537 disposed:false
+34 silly fetch manifest mongodb-client-encryption@>=7.0.0 <7.1.0
+35 silly packumentCache full:https://registry.npmjs.org/mongodb-client-encryption cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/mongodb-client-encryption 446ms (cache revalidated)
+37 silly packumentCache full:https://registry.npmjs.org/mongodb-client-encryption set size:262386 disposed:false
+38 silly fetch manifest snappy@^7.3.2
+39 silly packumentCache full:https://registry.npmjs.org/snappy cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/snappy 562ms (cache revalidated)
+41 silly packumentCache full:https://registry.npmjs.org/snappy set size:185121 disposed:false
+42 silly fetch manifest socks@^2.8.6
+43 silly packumentCache full:https://registry.npmjs.org/socks cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/socks 1011ms (cache revalidated)
+45 silly packumentCache full:https://registry.npmjs.org/socks set size:168523 disposed:false
+46 silly placeDep ROOT mongodb@7.1.1 REPLACE for:  want: ^7.1.1
+47 silly reify moves {}
+48 silly audit bulk request {
+48 silly audit   '@mongodb-js/saslprep': [ '1.4.6' ],
+48 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+48 silly audit   '@types/whatwg-url': [ '13.0.0' ],
+48 silly audit   bson: [ '7.2.0' ],
+48 silly audit   'memory-pager': [ '1.5.0' ],
+48 silly audit   'mongodb-connection-string-url': [ '7.0.1' ],
+48 silly audit   punycode: [ '2.3.1' ],
+48 silly audit   'sparse-bitfield': [ '3.0.3' ],
+48 silly audit   tr46: [ '5.1.1' ],
+48 silly audit   'webidl-conversions': [ '7.0.0' ],
+48 silly audit   'whatwg-url': [ '14.2.0' ],
+48 silly audit   mongodb: [ '7.1.1' ]
+48 silly audit }
+49 http cache mongodb@https://registry.npmjs.org/mongodb/-/mongodb-7.1.1.tgz 0ms (cache hit)
+50 http cache whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-14.2.0.tgz 0ms (cache hit)
+51 http cache tr46@https://registry.npmjs.org/tr46/-/tr46-5.1.1.tgz 0ms (cache hit)
+52 http cache webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-7.0.0.tgz 0ms (cache hit)
+53 http cache sparse-bitfield@https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz 0ms (cache hit)
+54 http cache punycode@https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz 0ms (cache hit)
+55 http cache mongodb-connection-string-url@https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-7.0.1.tgz 0ms (cache hit)
+56 http cache memory-pager@https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz 0ms (cache hit)
+57 http cache bson@https://registry.npmjs.org/bson/-/bson-7.2.0.tgz 0ms (cache hit)
+58 http cache @types/whatwg-url@https://registry.npmjs.org/@types/whatwg-url/-/whatwg-url-13.0.0.tgz 0ms (cache hit)
+59 http cache @types/webidl-conversions@https://registry.npmjs.org/@types/webidl-conversions/-/webidl-conversions-7.0.3.tgz 0ms (cache hit)
+60 http cache @mongodb-js/saslprep@https://registry.npmjs.org/@mongodb-js/saslprep/-/saslprep-1.4.6.tgz 0ms (cache hit)
+61 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 587ms
+62 silly audit report {}
+63 silly ADD node_modules/mongodb
+64 silly ADD node_modules/whatwg-url
+65 silly ADD node_modules/webidl-conversions
+66 silly ADD node_modules/tr46
+67 silly ADD node_modules/sparse-bitfield
+68 silly ADD node_modules/punycode
+69 silly ADD node_modules/mongodb-connection-string-url
+70 silly ADD node_modules/memory-pager
+71 silly ADD node_modules/bson
+72 silly ADD node_modules/@types/whatwg-url
+73 silly ADD node_modules/@types/webidl-conversions
+74 silly ADD node_modules/@mongodb-js/saslprep
+75 verbose cwd /data/data/com.termux/files/home
+76 verbose os Linux 4.19.157-perf+
+77 verbose node v25.8.1
+78 verbose npm  v11.12.0
+79 notice
+79 notice New [36mpatch[39m version of npm available! [36m11.12.0[39m -> [34m11.12.1[39m
+79 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.12.1[39m
+79 notice To update run: [4mnpm install -g npm@11.12.1[24m
+79 notice  { force: true, Symbol(proc-log.meta): true }
+80 verbose exit 0
+81 info ok
