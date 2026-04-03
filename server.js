@@ -22,7 +22,7 @@ async function startServer() {
                     await db.collection("jobs").insertOne({ name, price });
                     res.end("Job Posted Successfully!");
                 } else {
-                    res.end("Missing data");
+                    res.end("Error: Missing data");
                 }
             } 
             else if (path === '/apply-job') {
@@ -31,7 +31,7 @@ async function startServer() {
                     await db.collection("applications").insertOne({ job, name, phone });
                     res.end("Applied Successfully!");
                 } else {
-                    res.end("Missing data");
+                    res.end("Error: Missing data");
                 }
             }
             else {
@@ -39,20 +39,21 @@ async function startServer() {
                     const jobs = await db.collection("jobs").find().toArray();
                     res.writeHead(200, { 'Content-Type': 'text/html' });
                     let list = jobs.map(j => `<li>${j.name} - ${j.price}</li>`).join('');
-                    res.end(`<h1>Swa-Nirbhar Jobs</h1><ul>${list || "<li>No jobs found</li>"}</ul>`);
+                    res.end(`<h1>Swa-Nirbhar Jobs</h1><ul>${list || "<li>No jobs available</li>"}</ul>`);
                 } catch (e) {
-                    res.end("Error loading jobs");
+                    res.end("Error loading data from database");
                 }
             }
         });
 
-        const PORT = process.env.PORT || 3000;
-        server.listen(PORT, () => {
+        // Use 0.0.0.0 and process.env.PORT for Render deployment
+        const PORT = process.env.PORT || 10000;
+        server.listen(PORT, '0.0.0.0', () => {
             console.log("Server is running on port " + PORT);
         });
 
     } catch (err) {
-        console.error("Database connection failed", err);
+        console.error("Database connection failed:", err);
         process.exit(1);
     }
 }
